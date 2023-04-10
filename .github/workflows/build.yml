@@ -2,10 +2,10 @@ name: Build to GCR
 on: 
   push:
     branches:
-      - master
+      - main
       
 env:
-  IMAGE_NAME: tweet-app-el
+  IMAGE_NAME: gitops-app
       
 jobs:
   Deploy:
