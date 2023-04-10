@@ -1,0 +1,10 @@
+image: docker:stable
+services:
+  - docker:dind
+build-job:
+  script:
+    - docker login -u $USER -p $PASSWORD
+    - docker build -t willyf1/python-ip:1.4.0 .
+    - docker push willyf1/python-ip:1.4.0
+    #- docker build -t willyf1/python-ip:${CI_COMMIT_SHORT_SHA} .
+    #- docker push willyf1/python-ip:${CI_COMMIT_SHORT_SHA}

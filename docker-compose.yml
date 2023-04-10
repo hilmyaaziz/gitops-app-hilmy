@@ -1,0 +1,10 @@
+version: '3'
+services:
+    web:
+        build: .
+        volumes:
+            - "./logs/:/var/log/nginx/"
+            # - "./web:/var/www/html"
+        ports:
+            - "80:80"
+            - "443:443"
