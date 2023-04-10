@@ -5,7 +5,7 @@ on:
       - main
       
 env:
-  IMAGE_NAME: gitops-app
+  IMAGE_NAME: gitops-app-hilmy
   PROJECT_ID: horizontal-veld-327901
       
 jobs:
